@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+
+
+    <link rel="stylesheet" type="text/css" href="/css/style_control.css">
+    <title></title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header_body">
+                <div class="logo_block">
+                    <img src="/css/logo_white.svg" alt="логотип" style="margin-right: 30px">
+                    <p class="header_logo">Склад<br>Контроль</p>
+                </div>
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li><a href="#" class="header_list">Отчеты</a></li>
+                        <li><a href="#" class="header_list">Пользователи</a></li>
+                        <li><a href="#"><img src="/css/Vector.svg" alt="профиль"></a></li>
+                        <li><a href="/api/logout" class="header_list">Выйти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <form action="" method="POST" class="login-email" onsubmit="return false;" id="form">
+                <p class="login-text" style="font-size: 40pt; font-weight: 800;">Создание нового отчета</p>
+                <div class="input-group">
+                    <label for="product">
+                        <input type="text" placeholder="код товара" name="product" value="" required id="product">
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="partiya">
+                        <input type="text" placeholder="номер партии" name="partiya" value="" required id="partiya">
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="sklad">
+                        <input type="text" placeholder="расположение на складе" name="sklad" value="" required id="sklad">
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="description">
+                        <input type="text" placeholder="описание проблемы" name="description" value="" required id="description">
+                    </label>
+                </div>
+                <div class="input-group">
+                    <button name="submit" class="btn">Создать отчет</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js/report.js"></script>
+</body>
+</html>
