@@ -7,6 +7,12 @@ router.get("/", loggeedin, (req, res) => {
         if (req.user.role === 1) {
             res.render("index", {status:"loggedin", user:req.user});
         }
+        else if (req.user.role === 2) {
+            res.render("reports", {status:"loggedin", user:req.user});
+        }
+        else if (req.user.role === 3) {
+            res.render("new_report", {status:"loggedin", user:req.user});
+        }
     }
     else {
         res.sendFile("login.html", {root: "./public/"});

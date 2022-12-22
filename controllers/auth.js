@@ -8,6 +8,7 @@ const new_report = require("./new_report");
 const report = require("./report");
 const reports = require("./reports");
 const change_status = require("./change_status");
+const change_role = require("./change_role");
 
 const router = express.Router();
 
@@ -19,6 +20,6 @@ router.get('/reports', reports);
 router.get('/report', report);
 router.post('/change_status', change_status);
 router.get('/users', users);
-
+router.post('/change_role', change_role);
 
 module.exports = router;
