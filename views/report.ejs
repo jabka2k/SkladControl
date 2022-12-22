@@ -12,7 +12,7 @@
     </style>
 
 
-    <link rel="stylesheet" type="text/css" href="/css/reports.css">
+    <link rel="stylesheet" type="text/css" href="/css/style_control.css">
     <title></title>
 </head>
 <body>
@@ -22,7 +22,7 @@
             <div class="header_body">
                 <div class="logo_block">
                     <img src="/css/logo_white.svg" alt="логотип" style="margin-right: 30px">
-                    <p style="text-align: left" class="header_logo">Склад<br>Контроль</p>
+                    <p class="header_logo">Склад<br>Контроль</p>
                 </div>
                 <div class="header_burger">
                     <span></span>
@@ -40,13 +40,35 @@
     </header>
     <div class="main">
         <div class="container">
-            <h2 style="font-size: 40pt">Отчеты</h2>
-            <div class="reports">
-
-            </div>
+            <form action="" method="POST" class="login-email" onsubmit="return false;" id="form">
+                <p class="login-text" style="font-size: 40pt; font-weight: 800;">Отчет №</p>
+                <div class="input-group">
+                    <label for="product">
+                        <input type="text" placeholder="код товара" name="product" value="" required id="product" readonly>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="partiya">
+                        <input type="text" placeholder="номер партии" name="partiya" value="" required id="partiya" readonly>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="sklad">
+                        <input type="text" placeholder="расположение на складе" name="sklad" value="" required id="sklad" readonly>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="description">
+                        <input type="text" placeholder="описание проблемы" name="description" value="" required id="description" readonly>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <button name="submit" class="btn">Принять на рассмотрение</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
-<script src="js/reports.js"></script>
+<script src="js/report.js"></script>
 </body>
 </html>

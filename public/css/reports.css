@@ -215,7 +215,8 @@ body {
 }
 
 .header_list {
-
+    display: flex;
+    align-items: center;
 }
 
 .header_list li {
@@ -444,7 +445,8 @@ body {
 
 .reports {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 50px 0;
 }
 
@@ -453,4 +455,5 @@ body {
     font-size: 30px;
     border: 3px solid black;
     border-radius: 15px;
+    margin-bottom: 25px;
 }

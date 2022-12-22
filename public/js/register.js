@@ -14,8 +14,8 @@ form.addEventListener("submit", () => {
             if (data.status == "error") {
                 alert("данные введены неверно")
             }
-            else {
-
+            else if ((data.status === "success")){
+                window.location.href = '/login'
             }
         })
 })

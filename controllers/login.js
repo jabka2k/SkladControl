@@ -12,7 +12,7 @@ const login = async (req, res) => {
                 return res.json({status: "error", error: "Неверные электронная почта или пароль"});
             }
             else {
-                const token = jwt.sign({ id: result[0].id}, process.env.JWT_SECRET, {
+                const token = jwt.sign({ id: result[0].id, role: result[0].role}, process.env.JWT_SECRET, {
                     expiresIn: process.env.JWT_EXPIRES
                 })
                 const cookieOptions = {

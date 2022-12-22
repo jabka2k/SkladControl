@@ -20,6 +20,7 @@ body {
 
 .container {
     padding: 0 30px;
+    text-align: center;
 }
 
 .container .login-text {
@@ -432,4 +433,67 @@ body {
 
 .wrapper {
     width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.reports {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.report {
+    padding: 10px;
+    font-size: 30px;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.input-group .btn {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    border: none;
+    background: black;
+    outline: none;
+    border-radius: 30px;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.user {
+    display: flex;
+    padding: 10px;
+    font-size: 30px;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.user p {
+    margin: 0 10px;
+}
+.user input {
+    margin: 0 10px;
+}
+
+.role_btn {
+    margin-left: 10px;
 }

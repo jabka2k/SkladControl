@@ -22,7 +22,7 @@
             <div class="header_body">
                 <div class="logo_block">
                     <img src="/css/logo_white.svg" alt="логотип" style="margin-right: 30px">
-                    <p class="header_logo">Склад<br>Контроль</p>
+                    <p style="text-align: left" class="header_logo">Склад<br>Контроль</p>
                 </div>
                 <div class="header_burger">
                     <span></span>
@@ -39,22 +39,32 @@
         </div>
     </header>
     <div class="main">
-        <div class="reports">
-            <h2>Отчеты</h2>
-            <div class="container">
-                <form action="" method="POST" class="login-email" onsubmit="return false;" id="form">
-                    <div class="input-group">
-                        <label for="search">
-                            <input type="email" placeholder="поиск" name="search" value="" required id="search">
-                        </label>
+        <div class="container">
+            <h2 style="font-size: 40pt">Отчеты</h2>
+            <div class="reports">
+
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <h2 style="font-size: 40pt">Пользователи</h2>
+            <div class="users">
+                <form onsubmit="return false;" class="user">
+                    <p><b>id</b></p>
+                        <input name="role" type="radio" value="control" id = "control">
+                        <label for = control>сотрудник отдела качества</label>
+                        <input name="role" type="radio" value="sklad" id = "sklad">
+                        <label for="sklad">работник склада</label>
+                    <div class="input-group role_btn">
+                        <button name="submit" class="btn">сохранить</button>
                     </div>
                 </form>
             </div>
         </div>
-        <div class="users">
-
-        </div>
     </div>
 </div>
+<script src="js/reports.js"></script>
+<script src="js/users.js"></script>
 </body>
 </html>
