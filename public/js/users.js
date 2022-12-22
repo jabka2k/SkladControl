@@ -6,7 +6,7 @@ async function get_users() {
         let json = await response.json();
         json.forEach(function (item) {
             let user = document.createElement('form');
-            user.onsubmit = "return false"
+            user.className = "user"
 
             let id_number = document.createElement('p')
             id_number.innerHTML = `id ${item.id}`
@@ -27,7 +27,7 @@ async function get_users() {
             sklad.id = `sklad_${item.id}`
             let sklad_label = document.createElement('label')
             sklad_label.for = `sklad_${item.id}`
-            sklad_label.innerHTML = "сотрудник отдела качества"
+            sklad_label.innerHTML = "работник склада"
 
             let div_btn = document.createElement('div')
             div_btn.className = "input-group role_btn"
@@ -37,6 +37,7 @@ async function get_users() {
             btn.innerHTML = "сохранить"
 
             users.append(user)
+            user.onsubmit = "return false"
             user.append(id_number)
             user.append(control)
             user.append(control_label)
@@ -49,3 +50,8 @@ async function get_users() {
 }
 
 get_users()
+
+window.onload = function() {
+    let form = document.querySelectorAll('form');
+    form.onsubmit = "return false"
+}
