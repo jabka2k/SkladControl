@@ -13,6 +13,10 @@ router.get("/", loggeedin, (req, res) => {
         else if (req.user.role === 3) {
             res.render("new_report", {status:"loggedin", user:req.user});
         }
+        else if (req.user.role === 4) {
+            res.render("new", {status:"loggedin", user:req.user});
+        }
+
     }
     else {
         res.sendFile("login.html", {root: "./public/"});

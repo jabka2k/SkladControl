@@ -40,6 +40,7 @@ async function get_report() {
                         "Content-Type": "application/json"
                     }
                 })
+                location.reload()
             }
             else if(report.status === "inProgress") {
                 const new_status = {
@@ -53,6 +54,7 @@ async function get_report() {
                         "Content-Type": "application/json"
                     }
                 })
+                location.reload()
             }
         })
         }

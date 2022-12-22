@@ -19,7 +19,7 @@ async function get_users() {
                 control.type = "radio"
                 control.value = "control"
                 control.id = `control_${item.id}`
-                if(item.role == 2) {
+                if(item.role == 3) {
                     control.checked = true;
                 }
                 let control_label = document.createElement('label')
@@ -31,7 +31,7 @@ async function get_users() {
                 sklad.type = "radio"
                 sklad.value = "sklad"
                 sklad.id = `sklad_${item.id}`
-                if(item.role == 3) {
+                if(item.role == 2) {
                     sklad.checked = true;
                 }
                 let sklad_label = document.createElement('label')
